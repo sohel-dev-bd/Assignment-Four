@@ -51,7 +51,7 @@ function renderJobs() {
     div.className = "bg-white p-5 rounded-xl shadow";
 
     div.innerHTML = `
-      <h3 class="font-semibold text-lg py-2">${job.position}</h3>
+      <h3 class="font-semibold text-xl py-2 text-[#002C5C]">${job.position}</h3>
       <p class="text-sm text-gray-500 py-2">${job.company} • ${job.location}</p>
       <p class="text-sm text-gray-500 py-2">${job.type} • ${job.salary}</p>
       <p class="mt-2 text-gray-700 py-2">${job.description}</p>
