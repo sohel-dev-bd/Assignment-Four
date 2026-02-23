@@ -3,8 +3,8 @@ let jobs = [
   { id: 1, position: "Mobile First Corp", company: "React Native Developer", location: "Remote", type: "Full-time", salary: "$120k", description: "Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.", status: "all" },
   { id: 2, position: "WebFlow Agency", company: "React Engineer", location: "USA", type: "Contract", salary: "$100k", description: "Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.", status: "all" },
   { id: 3, position: "DataViz Solutions", company: "Data Visualization Specialist", location: "Canada", type: "Full-time", salary: "$110k", description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.", status: "all" },
-  { id: 4, position: "CloudFirst Inc",company: "Backend Developer", location: "Remote", type: "Full-time", salary: "$115k", description: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.", status: "all" },
-  { id: 5, position: "Innovation Labs",company: "UI/UX Engineer", location: "Europe", type: "Remote", salary: "$95k", description: "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.", status: "all" },
+  { id: 4, position: "CloudFirst Inc", company: "Backend Developer", location: "Remote", type: "Full-time", salary: "$115k", description: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.", status: "all" },
+  { id: 5, position: "Innovation Labs", company: "UI/UX Engineer", location: "Europe", type: "Remote", salary: "$95k", description: "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.", status: "all" },
   { id: 6, position: "MegaCorp Solutions", company: "JavaScript Developer", location: "USA", type: "Full-time", salary: "$125k", description: "Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.", status: "all" },
   { id: 7, position: "StartupXYZ", company: "Full Stack Engineer", location: "Remote", type: "Contract", salary: "$105k", description: "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.", status: "all" },
   { id: 8, position: "TechCorp Industries", company: "Senior Frontend Developer", location: "USA", type: "Full-time", salary: "$130k", description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.", status: "all" }
@@ -54,6 +54,7 @@ function renderJobs() {
       <h3 class="font-semibold text-xl py-2 text-[#002C5C]">${job.position}</h3>
       <p class="text-sm text-gray-500 py-2">${job.company} • ${job.location}</p>
       <p class="text-sm text-gray-500 py-2">${job.type} • ${job.salary}</p>
+        <button class=" w-[120px] bg-gray-300 text-white px-3 py-1 rounded">Not Applied</button>
       <p class="mt-2 text-gray-700 py-2">${job.description}</p>
 
     <div class="flex gap-2 mt-4 justify-between ">

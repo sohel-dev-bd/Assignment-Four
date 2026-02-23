@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+ 
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Assignment-Four</title>
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-      <!-- font awesome link -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisy ui link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body class="bg-gray-100 p-4 md:p-8 w-11/12 mx-auto">
 
   <!-- Dashboard -->
-   <h1 class="text-2xl font-bold text-[#002C5C]">Job Application Tracker</h1>
+  <h1 class="text-2xl font-bold text-[#002C5C]">Job Application Tracker</h1>
   <div class="grid grid-cols-3 md:flex-row gap-4 my-5 ">
 
-      <div class="bg-white p-4 rounded-md  shadow">
-        <p class="text-sm text-gray-500">Total</p>
-        <h2 id="totalCount" class="text-xl font-bold">0</h2>
-      </div>
-      <div class="bg-white p-4 rounded-md shadow">
-        <p class="text-sm text-gray-500">Interview</p>
-        <h2 id="interviewCount" class="text-xl font-bold text-[#10B981]">0</h2>
-      </div>
-      <div class="bg-white p-4 rounded-md  shadow">
-        <p class="text-sm text-gray-500">Rejected</p>
-        <h2 id="rejectedCount" class="text-xl font-bold text-red-400">0</h2>
-      </div>
-  
+    <div class="bg-white p-4 rounded-md  shadow">
+      <p class="text-sm text-gray-500">Total</p>
+      <h2 id="totalCount" class="text-xl font-bold">0</h2>
+    </div>
+    <div class="bg-white p-4 rounded-md shadow">
+      <p class="text-sm text-gray-500">Interview</p>
+      <h2 id="interviewCount" class="text-xl font-bold text-[#10B981]">0</h2>
+    </div>
+    <div class="bg-white p-4 rounded-md  shadow">
+      <p class="text-sm text-gray-500">Rejected</p>
+      <h2 id="rejectedCount" class="text-xl font-bold text-red-400">0</h2>
+    </div>
+
 
   </div>
 
@@ -53,8 +61,7 @@
 
     <!-- Empty State -->
     <div id="emptyState" class="hidden text-center mt-10 py-10 bg-white rounded-md">
-      <img class="mx-auto w-20 mb-4 "
-        src="assets/jobs.png">
+      <img class="mx-auto w-20 mb-4 " src="assets/jobs.png">
       <h3 class="font-semibold text-lg">No jobs available</h3>
       <p class="text-gray-500">Check back soon for new job opportunities</p>
     </div>
@@ -62,5 +69,5 @@
 
   <script src="script/script.js"></script>
 </body>
-</html>
 
+</html>
